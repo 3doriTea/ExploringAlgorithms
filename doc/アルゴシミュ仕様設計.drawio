@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.4">
   <diagram name="ページ1" id="ySbZnL4AvxnXjncR_vzi">
-    <mxGraphModel dx="521" dy="375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+    <mxGraphModel dx="625" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -232,13 +232,16 @@
           <mxGeometry height="60" width="120" x="1000" y="520" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-128" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CellSheetPainter : + GameObject" vertex="1">
-          <mxGeometry height="60" width="440" x="1120" y="521" as="geometry" />
+          <mxGeometry height="86" width="440" x="1120" y="521" as="geometry" />
+        </mxCell>
+        <mxCell id="UJqFrMXSVAojevRbkHD1-1" parent="vQP2i8JTHhKzuVeRg_wS-128" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- colorMap : CellSheet" vertex="1">
+          <mxGeometry height="26" width="440" y="26" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-131" parent="vQP2i8JTHhKzuVeRg_wS-128" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="440" y="26" as="geometry" />
+          <mxGeometry height="8" width="440" y="52" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-133" parent="vQP2i8JTHhKzuVeRg_wS-128" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Paint(cellSheet : const CellSheet&amp;amp;, colorMap : PaninterColorMap&amp;amp;)" vertex="1">
-          <mxGeometry height="26" width="440" y="34" as="geometry" />
+          <mxGeometry height="26" width="440" y="60" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-134" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PainterColorMap" vertex="1">
           <mxGeometry height="190" width="300" x="1480" y="160" as="geometry" />
