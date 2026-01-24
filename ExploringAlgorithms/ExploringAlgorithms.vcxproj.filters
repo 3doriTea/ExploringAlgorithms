@@ -15,6 +15,15 @@
     <Filter Include="Cppのファイルたち\Library">
       <UniqueIdentifier>{f5edf6f8-d0e5-4a29-a609-6632245f681d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cppのファイルたち\Scene">
+      <UniqueIdentifier>{500c4839-6c1f-49a8-848c-a7ab377ee44e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cppのファイルたち\Setting">
+      <UniqueIdentifier>{44b234de-4393-48c7-9e33-ed44f567d9de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cppのファイルたち\CoreType">
+      <UniqueIdentifier>{e0b1a855-8b8f-4e9b-bb74-00d677fa38b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImGui\imconfig.h">
@@ -71,26 +80,26 @@
     <ClInclude Include="Library\Time.h">
       <Filter>Cppのファイルたち\Library</Filter>
     </ClInclude>
-    <ClInclude Include="Source\BootScene.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\SceneFactory.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Screen.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\TitleScene.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Vec2Int.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\PlayScene.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
     <ClInclude Include="Source\CellSheet.h">
       <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BootScene.h">
+      <Filter>Cppのファイルたち\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayScene.h">
+      <Filter>Cppのファイルたち\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneFactory.h">
+      <Filter>Cppのファイルたち\Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Screen.h">
+      <Filter>Cppのファイルたち\Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TitleScene.h">
+      <Filter>Cppのファイルたち\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Vec2Int.h">
+      <Filter>Cppのファイルたち\CoreType</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -133,20 +142,20 @@
     <ClCompile Include="Library\Time.cpp">
       <Filter>Cppのファイルたち\Library</Filter>
     </ClCompile>
-    <ClCompile Include="Source\BootScene.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\SceneFactory.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\TitleScene.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\PlayScene.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
     <ClCompile Include="Source\CellSheet.cpp">
       <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BootScene.cpp">
+      <Filter>Cppのファイルたち\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayScene.cpp">
+      <Filter>Cppのファイルたち\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneFactory.cpp">
+      <Filter>Cppのファイルたち\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TitleScene.cpp">
+      <Filter>Cppのファイルたち\Scene</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
