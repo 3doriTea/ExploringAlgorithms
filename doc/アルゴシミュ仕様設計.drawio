@@ -195,7 +195,7 @@
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-104" parent="vQP2i8JTHhKzuVeRg_wS-99" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ constructor(maze : Maze&amp;amp;)" vertex="1">
           <mxGeometry height="26" width="300" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-108" parent="vQP2i8JTHhKzuVeRg_wS-99" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetGoalPos() : Vec2Int" vertex="1">
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-108" parent="vQP2i8JTHhKzuVeRg_wS-99" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ TryLoad(mazeFile : fs::path) : bool" vertex="1">
           <mxGeometry height="26" width="300" y="86" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-110" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="IMazeViewer" vertex="1">
@@ -224,6 +224,9 @@
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-122" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" value="Utility" vertex="1">
           <mxGeometry height="200" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;CellSheetPainter&lt;/div&gt;CellSheetを&lt;div&gt;描画するやつ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1000" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
