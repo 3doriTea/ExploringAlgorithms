@@ -44,7 +44,7 @@
           <mxGeometry height="60" width="120" x="1000" y="240" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-8" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CellSheet" vertex="1">
-          <mxGeometry height="138" width="300" x="1120" y="240" as="geometry" />
+          <mxGeometry height="164" width="300" x="1120" y="240" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-9" parent="vQP2i8JTHhKzuVeRg_wS-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- flattened : std::vector&amp;lt;int&amp;gt;" vertex="1">
           <mxGeometry height="26" width="300" y="26" as="geometry" />
@@ -60,6 +60,9 @@
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-17" parent="vQP2i8JTHhKzuVeRg_wS-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ At(pos : Vec2Int) : int&amp;amp;" vertex="1">
           <mxGeometry height="26" width="300" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-143" parent="vQP2i8JTHhKzuVeRg_wS-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetSize() : Vec2Int" vertex="1">
+          <mxGeometry height="26" width="300" y="138" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-19" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Vec2Int" vertex="1">
           <mxGeometry height="112" width="160" x="10" y="44" as="geometry" />
@@ -226,10 +229,10 @@
           <mxGeometry height="200" width="300" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;CellSheetPainter&lt;/div&gt;CellSheetを&lt;div&gt;描画するやつ&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="1000" y="400" as="geometry" />
+          <mxGeometry height="60" width="120" x="1000" y="520" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-128" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CellSheetPainter : + GameObject" vertex="1">
-          <mxGeometry height="60" width="440" x="1120" y="401" as="geometry" />
+          <mxGeometry height="60" width="440" x="1120" y="521" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-131" parent="vQP2i8JTHhKzuVeRg_wS-128" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="440" y="26" as="geometry" />
