@@ -161,23 +161,11 @@
     <ClInclude Include="Library\SceneBase.h" />
     <ClInclude Include="Library\SceneManager.h" />
     <ClInclude Include="Library\Time.h" />
-    <ClInclude Include="Source\AStarPlayer.h" />
     <ClInclude Include="Source\BootScene.h" />
-    <ClInclude Include="Source\CellInfo.h" />
-    <ClInclude Include="Source\Dig\DiggingDungeon.h" />
-    <ClInclude Include="Source\Dig\Dungeon.h" />
-    <ClInclude Include="Source\Dig\DungeonViewer.h" />
-    <ClInclude Include="Source\Dig\MapLoadDungeon.h" />
-    <ClInclude Include="Source\Dig\Randomer.h" />
-    <ClInclude Include="Source\DijkstraPlayer.h" />
-    <ClInclude Include="Source\IDataList.h" />
-    <ClInclude Include="Source\MapLoader.h" />
-    <ClInclude Include="Source\Player.h" />
+    <ClInclude Include="Source\CellSheet.h" />
     <ClInclude Include="Source\PlayScene.h" />
-    <ClInclude Include="Source\RoadPainter.h" />
     <ClInclude Include="Source\SceneFactory.h" />
     <ClInclude Include="Source\Screen.h" />
-    <ClInclude Include="Source\StackAndQueue.h" />
     <ClInclude Include="Source\TitleScene.h" />
     <ClInclude Include="Source\Vec2Int.h" />
   </ItemGroup>
@@ -195,18 +183,9 @@
     <ClCompile Include="Library\ObjectManager.cpp" />
     <ClCompile Include="Library\SceneManager.cpp" />
     <ClCompile Include="Library\Time.cpp" />
-    <ClCompile Include="Source\AStarPlayer.cpp" />
     <ClCompile Include="Source\BootScene.cpp" />
-    <ClCompile Include="Source\Dig\DiggingDungeon.cpp" />
-    <ClCompile Include="Source\Dig\Dungeon.cpp" />
-    <ClCompile Include="Source\Dig\DungeonViewer.cpp" />
-    <ClCompile Include="Source\Dig\MapLoadDungeon.cpp" />
-    <ClCompile Include="Source\Dig\Randomer.cpp" />
-    <ClCompile Include="Source\DijkstraPlayer.cpp" />
-    <ClCompile Include="Source\MapLoader.cpp" />
-    <ClCompile Include="Source\Player.cpp" />
+    <ClCompile Include="Source\CellSheet.cpp" />
     <ClCompile Include="Source\PlayScene.cpp" />
-    <ClCompile Include="Source\RoadPainter.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />
     <ClCompile Include="Source\TitleScene.cpp" />
   </ItemGroup>

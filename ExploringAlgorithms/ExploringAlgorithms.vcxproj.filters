@@ -71,46 +71,7 @@
     <ClInclude Include="Library\Time.h">
       <Filter>Cppのファイルたち\Library</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Dig\DiggingDungeon.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Dig\Dungeon.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Dig\DungeonViewer.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Dig\MapLoadDungeon.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Dig\Randomer.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\AStarPlayer.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
     <ClInclude Include="Source\BootScene.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\CellInfo.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\DijkstraPlayer.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\IDataList.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\MapLoader.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Player.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\PlayScene.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\RoadPainter.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
     <ClInclude Include="Source\SceneFactory.h">
@@ -119,13 +80,16 @@
     <ClInclude Include="Source\Screen.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
-    <ClInclude Include="Source\StackAndQueue.h">
-      <Filter>Cppのファイルたち</Filter>
-    </ClInclude>
     <ClInclude Include="Source\TitleScene.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
     <ClInclude Include="Source\Vec2Int.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayScene.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CellSheet.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
   </ItemGroup>
@@ -169,46 +133,19 @@
     <ClCompile Include="Library\Time.cpp">
       <Filter>Cppのファイルたち\Library</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Dig\DiggingDungeon.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Dig\Dungeon.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Dig\DungeonViewer.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Dig\MapLoadDungeon.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Dig\Randomer.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\AStarPlayer.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
     <ClCompile Include="Source\BootScene.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\DijkstraPlayer.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\MapLoader.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Player.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\PlayScene.cpp">
-      <Filter>Cppのファイルたち</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\RoadPainter.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
     <ClCompile Include="Source\SceneFactory.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
     <ClCompile Include="Source\TitleScene.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayScene.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CellSheet.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>
