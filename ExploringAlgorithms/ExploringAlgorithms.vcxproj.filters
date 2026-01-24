@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Cppのファイルたち">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx;h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Cppのファイルたち\ImGui">
+      <UniqueIdentifier>{ae2468be-cd96-445b-9dd9-0ea578812f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cppのファイルたち\Library">
+      <UniqueIdentifier>{f5edf6f8-d0e5-4a29-a609-6632245f681d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dxlib.hpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\App.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GameObject.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\myDxLib.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectManager.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\resourceLoader.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\SceneBase.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\SceneManager.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Time.h">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dig\DiggingDungeon.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dig\Dungeon.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dig\DungeonViewer.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dig\MapLoadDungeon.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dig\Randomer.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AStarPlayer.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BootScene.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CellInfo.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DijkstraPlayer.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IDataList.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MapLoader.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Player.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayScene.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RoadPainter.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneFactory.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Screen.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StackAndQueue.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TitleScene.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Vec2Int.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_ja_gryph_ranges.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>Cppのファイルたち\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\App.cpp">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\main.cpp">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectManager.cpp">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\SceneManager.cpp">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Time.cpp">
+      <Filter>Cppのファイルたち\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dig\DiggingDungeon.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dig\Dungeon.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dig\DungeonViewer.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dig\MapLoadDungeon.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dig\Randomer.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AStarPlayer.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BootScene.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DijkstraPlayer.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MapLoader.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayScene.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RoadPainter.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneFactory.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TitleScene.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
