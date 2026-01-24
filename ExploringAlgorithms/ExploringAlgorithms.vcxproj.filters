@@ -101,6 +101,12 @@
     <ClInclude Include="Source\Vec2Int.h">
       <Filter>Cppのファイルたち\CoreType</Filter>
     </ClInclude>
+    <ClInclude Include="Source\CellSheetPainter.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PainterColorMap.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -156,6 +162,12 @@
     </ClCompile>
     <ClCompile Include="Source\TitleScene.cpp">
       <Filter>Cppのファイルたち\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CellSheetPainter.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PainterColorMap.cpp">
+      <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

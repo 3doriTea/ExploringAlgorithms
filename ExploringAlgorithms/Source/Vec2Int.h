@@ -1,5 +1,9 @@
 #pragma once
 
+
+/// <summary>
+/// 2ŸŒ³ƒxƒNƒgƒ‹®”Œ^
+/// </summary>
 struct Vec2Int
 {
 	int x;

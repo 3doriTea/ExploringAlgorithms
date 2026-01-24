@@ -18,6 +18,12 @@ public:
 	/// <returns>セルの値参照</returns>
 	int& At(const Vec2Int _pos);
 
+	/// <summary>
+	/// セルシートのサイズを取得
+	/// </summary>
+	/// <returns>サイズ xy</returns>
+	Vec2Int GetSize() const { return size_; }
+
 private:
 	Vec2Int size_;                // サイズ
 	std::vector<int> flattened_;  // 1次元配列で管理する数値
