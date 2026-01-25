@@ -196,6 +196,7 @@
     <ClCompile Include="Library\SceneManager.cpp" />
     <ClCompile Include="Library\Time.cpp" />
     <ClCompile Include="Source\AlgorithmPlayer.cpp" />
+    <ClCompile Include="Source\AStar.cpp" />
     <ClCompile Include="Source\BFS.cpp" />
     <ClCompile Include="Source\BootScene.cpp" />
     <ClCompile Include="Source\CellSheet.cpp" />
