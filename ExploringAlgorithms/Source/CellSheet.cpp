@@ -21,3 +21,13 @@ int& CellSheet::At(const Vec2Int _pos)
 
 	return flattened_.at(index);
 }
+
+int CellSheet::At(const Vec2Int _pos) const
+{
+	int index{ _pos.x + _pos.y * size_.x };
+
+	assert(0 <= index && index < flattened_.size()
+		&& "セルシートの範囲外にアクセスされます。");
+
+	return flattened_.at(index);
+}

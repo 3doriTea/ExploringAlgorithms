@@ -19,6 +19,13 @@ public:
 	int& At(const Vec2Int _pos);
 
 	/// <summary>
+	/// セルの値を取得する
+	/// </summary>
+	/// <param name="_pos">セルの座標</param>
+	/// <returns>セルの値コピー</returns>
+	int At(const Vec2Int _pos) const;
+
+	/// <summary>
 	/// セルシートのサイズを取得
 	/// </summary>
 	/// <returns>サイズ xy</returns>

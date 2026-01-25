@@ -11,6 +11,19 @@ class PainterColorMap;
 class CellSheetPainter : public GameObject
 {
 public:
+	/// <summary>
+	/// 描画の設定
+	/// </summary>
+	struct Config
+	{
+		Config(int _cellWidth) :
+			cellWidth{ _cellWidth }
+		{
+		}
+
+		int cellWidth;
+	};
+public:
 	CellSheetPainter();
 	~CellSheetPainter();
 
@@ -25,5 +38,6 @@ public:
 	void Paint(const CellSheet& _cellSheet, const PainterColorMap& _painterColorMap);
 
 private:
-	CellSheet colorCellSheet_;  // カラーセルシート
+	Config config_;
+	//CellSheet colorCellSheet_;  // カラーセルシート
 };
