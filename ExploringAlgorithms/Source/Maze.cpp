@@ -6,8 +6,8 @@
 
 
 Maze::Maze() :
-	mazeCells_{ {} },
-	markCells_{ {} },
+	mazeCells_{ {}, RoadCellType::ROAD_COST_0 },
+	markCells_{ {}, NULL },
 	startPos_{},
 	goalPos_{}
 {

@@ -24,9 +24,11 @@ public:
 	virtual void Init() = 0;
 	virtual bool Step() = 0;
 
+	int GetRoadCost(const Vec2Int _pos) const;
 	bool GetIsWall(const Vec2Int _pos);
 	Vec2Int GetGoalPos();
 	Vec2Int GetStartPos();
+	Vec2Int GetSize() const;
 	/// <summary>
 	/// 確認済みセルをセットする
 	/// </summary>

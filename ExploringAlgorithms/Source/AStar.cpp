@@ -3,6 +3,9 @@
 
 void AStar::Init()
 {
+	roadCost_.Reset(GetSize());
+	roadCost_.SetCost(0, GetStartPos());
+
 	queue_.push(ToCostAndPos(GetStartPos()));
 	TrySetFrontier(GetStartPos());
 }
@@ -46,6 +49,7 @@ bool AStar::Step()
 
 		if (TrySetFrontier(frontier))
 		{
+			roadCost_.SetCostUnitCell(GetRoadCost(frontier) + 1, frontier);
 			queue_.push(ToCostAndPos(frontier));
 		}
 	}
@@ -64,8 +68,7 @@ CostAndPos AStar::ToCostAndPos(const Vec2Int _pos)
 
 float AStar::G(const Vec2Int _pos)
 {
-
-	return ;
+	return roadCost_.GetCost(_pos);
 }
 
 float AStar::H(const Vec2Int _pos)

@@ -2,6 +2,8 @@
 #include "AlgorithmPlayer.h"
 #include <queue>
 #include "CellSheet.h"
+#include "RoadCost.h"
+
 
 struct CostAndPos
 {
@@ -36,7 +38,7 @@ private:
 	static float GetDistance(const Vec2Int _a, const Vec2Int _b);
 
 private:
-	CellSheet costSheet_;  // 移動コストの情報
+	RoadCost roadCost_;  // 移動コストの情報
 
 	std::priority_queue<
 		CostAndPos,

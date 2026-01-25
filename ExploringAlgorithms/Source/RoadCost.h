@@ -14,6 +14,12 @@ public:
 	/// <param name="_cost">1つのセルにセットするコスト</param>
 	/// <param name="_pos">セルの座標</param>
 	void SetCostUnitCell(const int _cost, const Vec2Int _pos);
+	/// <summary>
+	/// セルのコストを設定する
+	/// </summary>
+	/// <param name="_cost">セルのコスト</param>
+	/// <param name="_pos">セルの座標</param>
+	void SetCost(const int _cost, const Vec2Int _pos);
 
 	/// <summary>
 	/// コスト表をリセットする
@@ -23,4 +29,5 @@ public:
 
 private:
 	CellSheet cells_;
+	static const int UNKNOWN_COST;
 };

@@ -52,6 +52,16 @@ void AlgorithmPlayer::Draw()
 	);
 }
 
+Vec2Int AlgorithmPlayer::GetSize() const
+{
+	return mazeView_.GetSize();
+}
+
+int AlgorithmPlayer::GetRoadCost(const Vec2Int _pos) const
+{
+	return mazeView_.GetRoadCost(_pos);
+}
+
 bool AlgorithmPlayer::GetIsWall(const Vec2Int _pos)
 {
 	return mazeView_.GetIsWall(_pos);
