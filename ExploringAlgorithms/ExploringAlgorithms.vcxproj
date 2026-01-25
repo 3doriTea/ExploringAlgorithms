@@ -164,6 +164,9 @@
     <ClInclude Include="Source\BootScene.h" />
     <ClInclude Include="Source\CellSheet.h" />
     <ClInclude Include="Source\CellSheetPainter.h" />
+    <ClInclude Include="Source\CellType.h" />
+    <ClInclude Include="Source\IMazeViewer.h" />
+    <ClInclude Include="Source\Maze.h" />
     <ClInclude Include="Source\PainterColorMap.h" />
     <ClInclude Include="Source\PlayScene.h" />
     <ClInclude Include="Source\SceneFactory.h" />
@@ -188,6 +191,7 @@
     <ClCompile Include="Source\BootScene.cpp" />
     <ClCompile Include="Source\CellSheet.cpp" />
     <ClCompile Include="Source\CellSheetPainter.cpp" />
+    <ClCompile Include="Source\Maze.cpp" />
     <ClCompile Include="Source\PainterColorMap.cpp" />
     <ClCompile Include="Source\PlayScene.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />

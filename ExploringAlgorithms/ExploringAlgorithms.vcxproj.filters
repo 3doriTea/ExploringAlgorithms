@@ -107,6 +107,15 @@
     <ClInclude Include="Source\PainterColorMap.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Maze.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IMazeViewer.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CellType.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -167,6 +176,9 @@
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
     <ClCompile Include="Source\PainterColorMap.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Maze.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>
