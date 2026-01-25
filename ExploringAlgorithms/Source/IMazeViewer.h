@@ -12,6 +12,11 @@ public:
 	inline virtual ~IMazeViewer() {}
 
 	/// <summary>
+	/// 迷路のサイズを取得
+	/// </summary>
+	/// <returns>迷路のサイズ</returns>
+	virtual Vec2Int GetSize() const = 0;
+	/// <summary>
 	/// 道を通るコストを取得
 	/// </summary>
 	/// <param name="_pos">道の座標</param>

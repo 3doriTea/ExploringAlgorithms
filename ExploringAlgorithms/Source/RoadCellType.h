@@ -2,9 +2,9 @@
 
 
 /// <summary>
-/// ƒZƒ‹‚ÌŽí—Þ
+/// –À˜HƒZƒ‹‚ÌŽí—Þ
 /// </summary>
-struct CellType
+struct RoadCellType
 {
 	enum : int
 	{

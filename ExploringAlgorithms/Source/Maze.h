@@ -1,15 +1,23 @@
 #pragma once
 #include "CellSheet.h"
 #include "IMazeViewer.h"
-#include "CellType.h"
+#include "RoadCellType.h"
+#include "../Library/GameObject.h"
 
 
-class Maze : public IMazeViewer
+class Maze : public GameObject, public IMazeViewer
 {
 public:
 	Maze();
 	~Maze();
 
+	void Draw() override;
+
+	/// <summary>
+	/// 迷路のサイズを取得する
+	/// </summary>
+	/// <returns>迷路のサイズ</returns>
+	Vec2Int GetSize() const override;
 	/// <summary>
 	/// 迷路セル全体をリセットしつつ埋める
 	/// </summary>
@@ -42,6 +50,5 @@ public:
 private:
 	CellSheet cells_;   // 迷路情報
 	Vec2Int startPos_;  // 迷路の開始地点
-	Vec2Int goalPos_;
-	// 迷路のゴール地点
+	Vec2Int goalPos_;   // 迷路のゴール地点
 };

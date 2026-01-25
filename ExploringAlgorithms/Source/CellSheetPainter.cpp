@@ -22,11 +22,20 @@ void CellSheetPainter::Draw()
 void CellSheetPainter::Paint(const CellSheet& _cellSheet, const PainterColorMap& _painterColorMap)
 {
 	Vec2Int size{ _cellSheet.GetSize() };
+	auto& valueToColor{ _painterColorMap.cellValueToColor_ };
+
 	for (int y = 0; y < size.y; y++)
 	{
 		for (int x = 0; x < size.x; x++)
 		{
-			uint32_t color{ _painterColorMap.cellValueToColor_.at(_cellSheet.At({ x, y }))};
+			int value{ _cellSheet.At({ x, y }) };
+
+			if (valueToColor.count(value) == 0)
+			{
+				continue;  // ŠÜ‚Ü‚ê‚Ä‚¢‚È‚¢‚È‚ç“h‚ç‚È‚¢
+			}
+
+			uint32_t color{ valueToColor.at(value)};
 			Vec2Int begin{ config_.cellWidth * x, config_.cellWidth * y };
 			Vec2Int end{ config_.cellWidth * (x + 1), config_.cellWidth * (y + 1) };
 

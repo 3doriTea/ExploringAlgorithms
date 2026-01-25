@@ -153,6 +153,10 @@
     <ClInclude Include="ImGui\imstb_rectpack.h" />
     <ClInclude Include="ImGui\imstb_textedit.h" />
     <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="Source\AlgorithmPlayer.h" />
+    <ClInclude Include="Source\AStar.h" />
+    <ClInclude Include="Source\BFS.h" />
+    <ClInclude Include="Source\CheckCellType.h" />
     <ClInclude Include="Source\IncludingFileSystem.h" />
     <ClInclude Include="Library\App.h" />
     <ClInclude Include="Library\GameObject.h" />
@@ -165,7 +169,7 @@
     <ClInclude Include="Source\BootScene.h" />
     <ClInclude Include="Source\CellSheet.h" />
     <ClInclude Include="Source\CellSheetPainter.h" />
-    <ClInclude Include="Source\CellType.h" />
+    <ClInclude Include="Source\RoadCellType.h" />
     <ClInclude Include="Source\IMazeViewer.h" />
     <ClInclude Include="Source\Maze.h" />
     <ClInclude Include="Source\MazeLoader.h" />
@@ -190,6 +194,8 @@
     <ClCompile Include="Library\ObjectManager.cpp" />
     <ClCompile Include="Library\SceneManager.cpp" />
     <ClCompile Include="Library\Time.cpp" />
+    <ClCompile Include="Source\AlgorithmPlayer.cpp" />
+    <ClCompile Include="Source\BFS.cpp" />
     <ClCompile Include="Source\BootScene.cpp" />
     <ClCompile Include="Source\CellSheet.cpp" />
     <ClCompile Include="Source\CellSheetPainter.cpp" />

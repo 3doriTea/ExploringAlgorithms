@@ -24,6 +24,9 @@
     <Filter Include="Cppのファイルたち\CoreType">
       <UniqueIdentifier>{e0b1a855-8b8f-4e9b-bb74-00d677fa38b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cppのファイルたち\Algorithm">
+      <UniqueIdentifier>{4fbc8c33-135d-469e-b991-8ec06d3ec3b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImGui\imconfig.h">
@@ -113,7 +116,7 @@
     <ClInclude Include="Source\IMazeViewer.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
-    <ClInclude Include="Source\CellType.h">
+    <ClInclude Include="Source\RoadCellType.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
     <ClInclude Include="Source\MazeLoader.h">
@@ -121,6 +124,18 @@
     </ClInclude>
     <ClInclude Include="Source\IncludingFileSystem.h">
       <Filter>Cppのファイルたち\CoreType</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AlgorithmPlayer.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AStar.h">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BFS.h">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CheckCellType.h">
+      <Filter>Cppのファイルたち</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +204,12 @@
     </ClCompile>
     <ClCompile Include="Source\MazeLoader.cpp">
       <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AlgorithmPlayer.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BFS.cpp">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

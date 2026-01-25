@@ -1,5 +1,6 @@
 #pragma once
 #include "IncludingFileSystem.h"
+#include "Vec2Int.h"
 
 
 class Maze;
@@ -22,9 +23,16 @@ public:
 
 private:
 	/// <summary>
-	/// 迷路データの文字 to 迷路の値
+	/// セルの読み込み
 	/// </summary>
-	/// <param name="_c">文字</param>
+	/// <param name="_c">セルの文字</param>
+	/// <param name="_pos">セルの座標</param>
+	void LoadCell(const char _c, const Vec2Int _pos);
+
+	/// <summary>
+	/// セルの文字 to セルの値
+	/// </summary>
+	/// <param name="_c">セルの文字</param>
 	/// <returns>迷路の値</returns>
 	int CellCharToValue(const char _c);
 
