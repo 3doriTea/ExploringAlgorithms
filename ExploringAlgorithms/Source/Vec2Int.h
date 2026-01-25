@@ -26,7 +26,7 @@ struct Vec2Int
 	}
 };
 
-Vec2Int operator+(Vec2Int _left, Vec2Int _right)
+inline Vec2Int operator+(Vec2Int _left, Vec2Int _right)
 {
 	return _left += _right;
 }

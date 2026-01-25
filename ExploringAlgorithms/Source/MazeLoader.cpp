@@ -39,6 +39,8 @@ bool MazeLoader::TryLoad(const fs::path& _mazeFile)
 		}
 		y++;
 	}
+
+	return true;
 }
 
 int MazeLoader::CellCharToValue(const char _c)
