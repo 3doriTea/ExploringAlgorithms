@@ -29,12 +29,12 @@ public:
 	/// 迷路の開始地点をセットする
 	/// </summary>
 	/// <param name="_pos">迷路の開始地点</param>
-	inline void SetStart(const Vec2Int _pos) { startPos_ = _pos; }
+	void SetStart(const Vec2Int _pos);
 	/// <summary>
 	/// 迷路のゴール地点をセットする
 	/// </summary>
 	/// <param name="_pos">迷路のゴール地点</param>
-	inline void SetGoal(const Vec2Int _pos) { goalPos_ = _pos; }
+	void SetGoal(const Vec2Int _pos);
 	/// <summary>
 	/// 道の値をセットする
 	/// </summary>
@@ -48,7 +48,8 @@ public:
 	inline Vec2Int GetStartPos() override { return startPos_; }
 
 private:
-	CellSheet cells_;   // 迷路情報
-	Vec2Int startPos_;  // 迷路の開始地点
-	Vec2Int goalPos_;   // 迷路のゴール地点
+	CellSheet mazeCells_;   // 迷路情報
+	CellSheet markCells_;   // マーカー情報
+	Vec2Int startPos_;      // 迷路の開始地点
+	Vec2Int goalPos_;       // 迷路のゴール地点
 };

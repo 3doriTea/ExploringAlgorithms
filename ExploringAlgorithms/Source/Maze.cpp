@@ -2,10 +2,12 @@
 #include "CellSheetPainter.h"
 #include "PainterColorMap.h"
 #include "RoadCellType.h"
+#include "MarkCellType.h"
 
 
 Maze::Maze() :
-	cells_{ {} },
+	mazeCells_{ {} },
+	markCells_{ {} },
 	startPos_{},
 	goalPos_{}
 {
@@ -19,47 +21,71 @@ void Maze::Draw()
 {
 	CellSheetPainter* pPainter{ FindGameObject<CellSheetPainter>() };
 	pPainter->Paint(
-		cells_,
+		mazeCells_,
 		PainterColorMap{}
-			.Reset()
-			.Set(RoadCellType::WALL, 0x0000ff));
+		.Reset()
+		.Set(RoadCellType::WALL, 0x0000ff)
+	);
+
+	pPainter->Paint(
+		mazeCells_,
+		PainterColorMap{}
+		.Reset()
+		.Set(MarkCellType::START, 0xff0000)
+		.Set(MarkCellType::GOAL, 0xff00ff)
+	);
 }
 
 Vec2Int Maze::GetSize() const
 {
-	return cells_.GetSize();
+	return mazeCells_.GetSize();
 }
 
 void Maze::ResetAndFill(const Vec2Int _size, int _fillValue)
 {
-	cells_ = CellSheet{ _size };
+	mazeCells_ = CellSheet{ _size };
+	markCells_ = CellSheet{ _size };
+
 	for (int y = 0; y < _size.y; y++)
 	{
 		for (int x = 0; x < _size.x; x++)
 		{
-			cells_.At({ x, y }) = _fillValue;
+			mazeCells_.At({ x, y }) = _fillValue;
+			markCells_.At({ x, y }) = NULL;
 		}
 	}
 }
 
+void Maze::SetStart(const Vec2Int _pos)
+{
+	startPos_ = _pos;
+	markCells_.At(_pos) = MarkCellType::START;
+}
+
+void Maze::SetGoal(const Vec2Int _pos)
+{
+	goalPos_ = _pos;
+	markCells_.At(_pos) = MarkCellType::GOAL;
+}
+
 void Maze::SetRoad(const int _value, const Vec2Int _pos)
 {
-	cells_.At(_pos) = _value;
+	mazeCells_.At(_pos) = _value;
 }
 
 int Maze::GetRoadCost(const Vec2Int _pos)
 {
-	if (cells_.At(_pos) == RoadCellType::WALL)
+	if (mazeCells_.At(_pos) == RoadCellType::WALL)
 	{
 		return INT_MAX;  // •Ç‚ÌƒRƒXƒg‚ÍÅ‘å
 	}
 	else
 	{
-		return cells_.At(_pos);
+		return mazeCells_.At(_pos);
 	}
 }
 
 bool Maze::GetIsWall(const Vec2Int _pos)
 {
-	return cells_.At(_pos) == RoadCellType::WALL;
+	return mazeCells_.At(_pos) == RoadCellType::WALL;
 }

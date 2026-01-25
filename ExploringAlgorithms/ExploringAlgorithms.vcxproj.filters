@@ -137,6 +137,9 @@
     <ClInclude Include="Source\CheckCellType.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\MarkCellType.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">

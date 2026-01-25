@@ -22,7 +22,7 @@ public:
 	void Draw() override final;
 
 	virtual void Init() = 0;
-	virtual void Step() = 0;
+	virtual bool Step() = 0;
 
 	bool GetIsWall(const Vec2Int _pos);
 	Vec2Int GetGoalPos();

@@ -10,7 +10,7 @@ public:
 	inline ~BFS() {}
 
 	void Init() override;
-	void Step() override;
+	bool Step() override;
 
 private:
 	std::stack<Vec2Int> stack_;

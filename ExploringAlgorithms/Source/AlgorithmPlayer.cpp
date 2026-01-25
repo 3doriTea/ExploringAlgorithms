@@ -17,21 +17,26 @@ AlgorithmPlayer::AlgorithmPlayer(const Config& _config, IMazeViewer& _mazeView) 
 
 void AlgorithmPlayer::Update()
 {
+	if (completed_)
+	{
+		return;  // 完了済みなら無視
+	}
+
 	timeLeftSec_ -= config_.deltaTimeSec;
 	if (timeLeftSec_ > 0)
 	{
-		return;
+		return;  // ステップ時間が来てないなら無視
 	}
 	timeLeftSec_ += config_.stepIntervalSec;
 
 	if (!initialized_)
 	{
-		Init();
+		Init();  // 最初の1ステップは初期化ターン
 		initialized_ = true;
 	}
 	else
 	{
-		Step();
+		completed_ = Step();
 	}
 }
 

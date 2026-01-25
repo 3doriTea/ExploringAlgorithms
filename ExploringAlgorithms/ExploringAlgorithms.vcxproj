@@ -169,6 +169,7 @@
     <ClInclude Include="Source\BootScene.h" />
     <ClInclude Include="Source\CellSheet.h" />
     <ClInclude Include="Source\CellSheetPainter.h" />
+    <ClInclude Include="Source\MarkCellType.h" />
     <ClInclude Include="Source\RoadCellType.h" />
     <ClInclude Include="Source\IMazeViewer.h" />
     <ClInclude Include="Source\Maze.h" />

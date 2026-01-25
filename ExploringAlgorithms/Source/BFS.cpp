@@ -6,7 +6,7 @@ void BFS::Init()
 	TrySetFrontier(GetStartPos());
 }
 
-void BFS::Step()
+bool BFS::Step()
 {
 	enum DIR_TYPE
 	{
@@ -24,6 +24,11 @@ void BFS::Step()
 		{ 1, 0 },
 		{ -1, 0 },
 	};
+
+	if (stack_.empty())
+	{
+		return true;  // スタックが空なら探索完了
+	}
 
 	Vec2Int drop{ stack_.top() };
 	stack_.pop();
@@ -44,4 +49,5 @@ void BFS::Step()
 		}
 	}
 
+	return false;
 }
