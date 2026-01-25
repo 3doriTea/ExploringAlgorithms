@@ -27,6 +27,12 @@ public:
 	/// </summary>
 	/// <param name="_pos">迷路のゴール地点</param>
 	inline void SetGoal(const Vec2Int _pos) { goalPos_ = _pos; }
+	/// <summary>
+	/// 道の値をセットする
+	/// </summary>
+	/// <param name="_value">値</param>
+	/// <param name="_pos">座標</param>
+	void SetRoad(const int _value, const Vec2Int _pos);
 
 	int GetRoadCost(const Vec2Int _pos) override;
 	bool GetIsWall(const Vec2Int _pos) override;

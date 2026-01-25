@@ -116,6 +116,12 @@
     <ClInclude Include="Source\CellType.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\MazeLoader.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IncludingFileSystem.h">
+      <Filter>Cppのファイルたち\CoreType</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -179,6 +185,9 @@
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
     <ClCompile Include="Source\Maze.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MazeLoader.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>

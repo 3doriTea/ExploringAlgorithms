@@ -24,7 +24,7 @@ public:
 		int cellWidth;
 	};
 public:
-	CellSheetPainter();
+	CellSheetPainter(const Config& _config);
 	~CellSheetPainter();
 
 	void Update() override;

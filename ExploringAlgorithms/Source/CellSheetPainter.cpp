@@ -2,7 +2,8 @@
 #include "CellSheet.h"
 #include "PainterColorMap.h"
 
-CellSheetPainter::CellSheetPainter()
+CellSheetPainter::CellSheetPainter(const Config& _config) :
+	config_{ _config }
 {
 }
 
