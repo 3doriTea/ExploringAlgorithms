@@ -43,17 +43,8 @@ Vec2Int Maze::GetSize() const
 
 void Maze::ResetAndFill(const Vec2Int _size, int _fillValue)
 {
-	mazeCells_ = CellSheet{ _size };
-	markCells_ = CellSheet{ _size };
-
-	for (int y = 0; y < _size.y; y++)
-	{
-		for (int x = 0; x < _size.x; x++)
-		{
-			mazeCells_.At({ x, y }) = _fillValue;
-			markCells_.At({ x, y }) = NULL;
-		}
-	}
+	mazeCells_ = CellSheet{ _size, _fillValue };
+	markCells_ = CellSheet{ _size, NULL };
 }
 
 void Maze::SetStart(const Vec2Int _pos)

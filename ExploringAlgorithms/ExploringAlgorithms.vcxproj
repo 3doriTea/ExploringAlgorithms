@@ -176,6 +176,7 @@
     <ClInclude Include="Source\MazeLoader.h" />
     <ClInclude Include="Source\PainterColorMap.h" />
     <ClInclude Include="Source\PlayScene.h" />
+    <ClInclude Include="Source\RoadCost.h" />
     <ClInclude Include="Source\SceneFactory.h" />
     <ClInclude Include="Source\Screen.h" />
     <ClInclude Include="Source\TitleScene.h" />
@@ -205,6 +206,7 @@
     <ClCompile Include="Source\MazeLoader.cpp" />
     <ClCompile Include="Source\PainterColorMap.cpp" />
     <ClCompile Include="Source\PlayScene.cpp" />
+    <ClCompile Include="Source\RoadCost.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />
     <ClCompile Include="Source\TitleScene.cpp" />
   </ItemGroup>

@@ -2,9 +2,9 @@
 #include <cassert>
 
 
-CellSheet::CellSheet(const Vec2Int _size) :
+CellSheet::CellSheet(const Vec2Int _size, const int _fillValue) :
 	size_{ _size },
-	flattened_{ std::vector<int>(_size.x * _size.y, 0) }
+	flattened_{ std::vector<int>(_size.x * _size.y, _fillValue) }
 {
 }
 

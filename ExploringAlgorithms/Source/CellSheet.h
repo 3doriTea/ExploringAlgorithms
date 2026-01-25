@@ -8,7 +8,7 @@
 class CellSheet
 {
 public:
-	CellSheet(const Vec2Int _size);
+	CellSheet(const Vec2Int _size, const int _fillValue);
 	~CellSheet();
 
 	/// <summary>

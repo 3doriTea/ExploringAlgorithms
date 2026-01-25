@@ -140,6 +140,9 @@
     <ClInclude Include="Source\MarkCellType.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\RoadCost.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -216,6 +219,9 @@
     </ClCompile>
     <ClCompile Include="Source\AStar.cpp">
       <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RoadCost.cpp">
+      <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

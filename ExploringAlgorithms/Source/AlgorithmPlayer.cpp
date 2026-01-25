@@ -11,7 +11,7 @@ AlgorithmPlayer::AlgorithmPlayer(const Config& _config, IMazeViewer& _mazeView) 
 	initialized_{ false },
 	completed_{ false },
 	timeLeftSec_{},
-	checkedSheet_{ _mazeView.GetSize() }
+	checkedSheet_{ _mazeView.GetSize(), CheckCellType::UNCHECKED }
 {
 }
 
