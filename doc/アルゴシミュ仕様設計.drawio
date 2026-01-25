@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.4">
   <diagram name="ページ1" id="ySbZnL4AvxnXjncR_vzi">
-    <mxGraphModel dx="625" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+    <mxGraphModel dx="521" dy="369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,28 +8,31 @@
           <mxGeometry height="60" width="120" x="440" y="160" as="geometry" />
         </mxCell>
         <mxCell id="xKCIosApPGY51aGupDFM-2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AlgorithmPlayer : + GameObject" vertex="1">
-          <mxGeometry height="190" width="300" x="560" y="160" as="geometry" />
+          <mxGeometry height="216" width="300" x="560" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="xKCIosApPGY51aGupDFM-3" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mazeView : IMazeViewer&amp;amp;" vertex="1">
+        <mxCell id="xKCIosApPGY51aGupDFM-3" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- mazeView : IMazeViewer&amp;amp;" vertex="1">
           <mxGeometry height="26" width="300" y="26" as="geometry" />
         </mxCell>
+        <mxCell id="UJqFrMXSVAojevRbkHD1-3" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- initialized_ : bool" vertex="1">
+          <mxGeometry height="26" width="300" y="52" as="geometry" />
+        </mxCell>
         <mxCell id="xKCIosApPGY51aGupDFM-4" parent="xKCIosApPGY51aGupDFM-2" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="300" y="52" as="geometry" />
+          <mxGeometry height="8" width="300" y="78" as="geometry" />
         </mxCell>
         <mxCell id="xKCIosApPGY51aGupDFM-5" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ constructor(mazeView : IMazeViewer&amp;amp;)" vertex="1">
-          <mxGeometry height="26" width="300" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-3" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# GetIsWall(pos : Vec2Int) : Vec2Int" vertex="1">
           <mxGeometry height="26" width="300" y="86" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-1" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# GetGoalPos() : Vec2Int" vertex="1">
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-3" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# GetIsWall(pos : Vec2Int) : Vec2Int" vertex="1">
           <mxGeometry height="26" width="300" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-2" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# GetStartPos() : Vec2Int" vertex="1">
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-1" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# GetGoalPos() : Vec2Int" vertex="1">
           <mxGeometry height="26" width="300" y="138" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-85" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# Step() : void { virtual = 0 }" vertex="1">
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-2" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# GetStartPos() : Vec2Int" vertex="1">
           <mxGeometry height="26" width="300" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-85" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# Step() : void { virtual = 0 }" vertex="1">
+          <mxGeometry height="26" width="300" y="190" as="geometry" />
         </mxCell>
         <mxCell id="xKCIosApPGY51aGupDFM-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Maze&lt;div&gt;壁とコストの情報&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="640" as="geometry" />
@@ -148,7 +151,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-76" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Maze" vertex="1">
-          <mxGeometry height="320" width="300" x="560" y="640" as="geometry" />
+          <mxGeometry height="346" width="300" x="560" y="640" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-77" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- cells : CellCheet" vertex="1">
           <mxGeometry height="26" width="300" y="26" as="geometry" />
@@ -174,17 +177,20 @@
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-97" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ SetStart(pos : Vec2Int) : void" vertex="1">
           <mxGeometry height="26" width="300" y="190" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-124" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetRoadCost(pos : Vec2Int) : int { override }" vertex="1">
+        <mxCell id="UJqFrMXSVAojevRbkHD1-2" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ SetRoad(value : int, pos : Vec2Int) : void" vertex="1">
           <mxGeometry height="26" width="300" y="216" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-80" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetIsWall(pos : Vec2Int) : bool { override }" vertex="1">
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-124" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetRoadCost(pos : Vec2Int) : int { override }" vertex="1">
           <mxGeometry height="26" width="300" y="242" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-81" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetGoalPos() : Vec2Int&amp;nbsp;{ override }" vertex="1">
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-80" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetIsWall(pos : Vec2Int) : bool { override }" vertex="1">
           <mxGeometry height="26" width="300" y="268" as="geometry" />
         </mxCell>
-        <mxCell id="vQP2i8JTHhKzuVeRg_wS-82" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetStartPos() : Vec2Int&amp;nbsp;{ override }" vertex="1">
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-81" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetGoalPos() : Vec2Int&amp;nbsp;{ override }" vertex="1">
           <mxGeometry height="26" width="300" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="vQP2i8JTHhKzuVeRg_wS-82" parent="vQP2i8JTHhKzuVeRg_wS-76" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetStartPos() : Vec2Int&amp;nbsp;{ override }" vertex="1">
+          <mxGeometry height="26" width="300" y="320" as="geometry" />
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-99" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MazeLoader" vertex="1">
           <mxGeometry height="112" width="300" x="120" y="440" as="geometry" />
