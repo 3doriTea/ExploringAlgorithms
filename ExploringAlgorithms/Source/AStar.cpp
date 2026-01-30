@@ -1,5 +1,7 @@
 #include "AStar.h"
 #include <cmath>
+#include "CellSheetPainter.h"
+#include "PainterNumberConfig.h"
 
 void AStar::Init()
 {
@@ -55,6 +57,17 @@ bool AStar::Step()
 	}
 
 	return false;
+}
+
+void AStar::Draw(CellSheetPainter* _pPainter)
+{
+	_pPainter->Paint(
+		roadCost_.GetRefCellSheet(),
+		PainterNumberConfig{}
+		.Reset()
+		.SetIgnore([](int value) { return value == -1; })
+		.SetTextColor(0x000000)
+	);
 }
 
 CostAndPos AStar::ToCostAndPos(const Vec2Int _pos)

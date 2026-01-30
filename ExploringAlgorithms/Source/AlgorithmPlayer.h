@@ -4,6 +4,7 @@
 
 
 class IMazeViewer;
+class CellSheetPainter;
 
 class AlgorithmPlayer : public GameObject
 {
@@ -20,6 +21,7 @@ public:
 
 	void Update() override final;
 	void Draw() override final;
+	virtual void Draw(CellSheetPainter* _pPainter);
 
 	virtual void Init() = 0;
 	virtual bool Step() = 0;

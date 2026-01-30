@@ -153,6 +153,7 @@
     <ClInclude Include="ImGui\imstb_rectpack.h" />
     <ClInclude Include="ImGui\imstb_textedit.h" />
     <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="Source\PainterNumberConfig.h" />
     <ClInclude Include="Source\AlgorithmPlayer.h" />
     <ClInclude Include="Source\AStar.h" />
     <ClInclude Include="Source\BFS.h" />
@@ -196,6 +197,7 @@
     <ClCompile Include="Library\ObjectManager.cpp" />
     <ClCompile Include="Library\SceneManager.cpp" />
     <ClCompile Include="Library\Time.cpp" />
+    <ClCompile Include="Source\PainterNumberConfig.cpp" />
     <ClCompile Include="Source\AlgorithmPlayer.cpp" />
     <ClCompile Include="Source\AStar.cpp" />
     <ClCompile Include="Source\BFS.cpp" />

@@ -25,6 +25,8 @@ public:
 	void Init() override;
 	bool Step() override;
 
+	void Draw(CellSheetPainter* _pPainter) override;
+
 private:
 	CostAndPos ToCostAndPos(const Vec2Int _pos);
 

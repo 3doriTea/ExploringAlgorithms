@@ -1,6 +1,7 @@
 #include "Maze.h"
 #include "CellSheetPainter.h"
 #include "PainterColorMap.h"
+#include "PainterNumberConfig.h"
 #include "RoadCellType.h"
 #include "MarkCellType.h"
 
@@ -11,6 +12,7 @@ Maze::Maze() :
 	startPos_{},
 	goalPos_{}
 {
+	SetDrawOrder(-1000);
 }
 
 Maze::~Maze()
@@ -28,12 +30,20 @@ void Maze::Draw()
 	);
 
 	pPainter->Paint(
-		mazeCells_,
+		markCells_,
 		PainterColorMap{}
 		.Reset()
 		.Set(MarkCellType::START, 0xff0000)
 		.Set(MarkCellType::GOAL, 0xff00ff)
 	);
+
+	/*pPainter->Paint(
+		mazeCells_,
+		PainterNumberConfig{}
+		.Reset()
+		.SetIgnore([](int value) { return value == -1; })
+		.SetTextColor(0x000000)
+	);*/
 }
 
 Vec2Int Maze::GetSize() const

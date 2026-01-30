@@ -4,6 +4,7 @@
 
 
 class PainterColorMap;
+class PainterNumberConfig;
 
 /// <summary>
 /// セルシートの内容を描画する
@@ -33,9 +34,14 @@ public:
 	/// <summary>
 	/// セルシートを描画する
 	/// </summary>
-	/// <param name="_cellSheet"></param>
+	/// <param name="_cellSheet">シート</param>
 	/// <param name="_painterColorMap"></param>
 	void Paint(const CellSheet& _cellSheet, const PainterColorMap& _painterColorMap);
+	/// <summary>
+	/// セルシートの値を描画する
+	/// </summary>
+	/// <param name="_cellSheet">シート</param>
+	void Paint(const CellSheet& _cellSheet, const PainterNumberConfig& _config);
 
 private:
 	Config config_;

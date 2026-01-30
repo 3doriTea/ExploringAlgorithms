@@ -143,6 +143,9 @@
     <ClInclude Include="Source\RoadCost.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\PainterNumberConfig.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -221,6 +224,9 @@
       <Filter>Cppのファイルたち\Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="Source\RoadCost.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PainterNumberConfig.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>

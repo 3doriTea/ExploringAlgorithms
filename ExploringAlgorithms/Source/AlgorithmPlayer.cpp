@@ -50,6 +50,12 @@ void AlgorithmPlayer::Draw()
 		.Set(CheckCellType::CHECKED, 0x00ff00)
 		.Set(CheckCellType::FRONTIER, 0x001000)
 	);
+
+	Draw(pPainter);
+}
+
+void AlgorithmPlayer::Draw(CellSheetPainter* _pPainter)
+{
 }
 
 Vec2Int AlgorithmPlayer::GetSize() const
