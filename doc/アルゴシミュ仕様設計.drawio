@@ -5,10 +5,10 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="xKCIosApPGY51aGupDFM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="アルゴリズムプレイヤー" vertex="1">
-          <mxGeometry height="60" width="120" x="440" y="160" as="geometry" />
+          <mxGeometry height="60" width="120" x="440" y="40" as="geometry" />
         </mxCell>
         <mxCell id="xKCIosApPGY51aGupDFM-2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AlgorithmPlayer : + GameObject" vertex="1">
-          <mxGeometry height="216" width="300" x="560" y="160" as="geometry" />
+          <mxGeometry height="242" width="300" x="560" y="40" as="geometry" />
         </mxCell>
         <mxCell id="xKCIosApPGY51aGupDFM-3" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- mazeView : IMazeViewer&amp;amp;" vertex="1">
           <mxGeometry height="26" width="300" y="26" as="geometry" />
@@ -33,6 +33,9 @@
         </mxCell>
         <mxCell id="vQP2i8JTHhKzuVeRg_wS-85" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# Step() : void { virtual = 0 }" vertex="1">
           <mxGeometry height="26" width="300" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="pCp9YzWeL54ItaGeOV8i-9" parent="xKCIosApPGY51aGupDFM-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ GetRefCostCellSheet() const : const CellSheet*" vertex="1">
+          <mxGeometry height="26" width="300" y="216" as="geometry" />
         </mxCell>
         <mxCell id="xKCIosApPGY51aGupDFM-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Maze&lt;div&gt;壁とコストの情報&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="640" as="geometry" />
