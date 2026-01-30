@@ -153,6 +153,7 @@
     <ClInclude Include="ImGui\imstb_rectpack.h" />
     <ClInclude Include="ImGui\imstb_textedit.h" />
     <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="Source\RouteViewer.h" />
     <ClInclude Include="Source\PainterNumberConfig.h" />
     <ClInclude Include="Source\AlgorithmPlayer.h" />
     <ClInclude Include="Source\AStar.h" />
@@ -209,6 +210,7 @@
     <ClCompile Include="Source\PainterColorMap.cpp" />
     <ClCompile Include="Source\PlayScene.cpp" />
     <ClCompile Include="Source\RoadCost.cpp" />
+    <ClCompile Include="Source\RouteViewer.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />
     <ClCompile Include="Source\TitleScene.cpp" />
   </ItemGroup>

@@ -146,6 +146,9 @@
     <ClInclude Include="Source\PainterNumberConfig.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\RouteViewer.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -227,6 +230,9 @@
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
     <ClCompile Include="Source\PainterNumberConfig.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RouteViewer.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>

@@ -26,6 +26,12 @@ public:
 	virtual void Init() = 0;
 	virtual bool Step() = 0;
 
+	/// <summary>
+	/// コストが載ったセルシートの constポインタを取得する
+	/// </summary>
+	/// <returns>セルシートの const ポインタ</returns>
+	virtual const CellSheet* GetRefCostCellSheet() const { return nullptr; }
+
 	int GetRoadCost(const Vec2Int _pos) const;
 	bool GetIsWall(const Vec2Int _pos);
 	Vec2Int GetGoalPos();
