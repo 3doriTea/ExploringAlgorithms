@@ -50,6 +50,12 @@ public:
 	/// <returns>セットに成功 true / false</returns>
 	bool TrySetFrontier(const Vec2Int _pos);
 
+	/// <summary>
+	/// 探索をコンプリートしたか
+	/// </summary>
+	/// <returns>コンプリートした true / false</returns>
+	inline bool IsCompleted() const { return completed_; }
+
 private:
 	bool initialized_;
 	bool completed_;

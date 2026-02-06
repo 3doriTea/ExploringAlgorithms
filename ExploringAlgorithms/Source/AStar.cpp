@@ -2,6 +2,7 @@
 #include <cmath>
 #include "CellSheetPainter.h"
 #include "PainterNumberConfig.h"
+#include "RouteViewer.h"
 
 void AStar::Init()
 {
@@ -14,6 +15,11 @@ void AStar::Init()
 
 bool AStar::Step()
 {
+	if (IsCompleted())
+	{
+		return true;
+	}
+
 	enum DIR_TYPE
 	{
 		DIR_UP,
@@ -52,7 +58,14 @@ bool AStar::Step()
 		if (TrySetFrontier(frontier))
 		{
 			roadCost_.SetCostUnitCell(GetRoadCost(frontier) + 1, frontier);
-			queue_.push(ToCostAndPos(frontier));
+			CostAndPos costAndPos{ ToCostAndPos(frontier) };
+			queue_.push(costAndPos);
+
+			if (costAndPos.pos == GetGoalPos())
+			{
+				new RouteViewer{ &roadCost_.GetRefCellSheet() };
+				return true;  // ÉSÅ[ÉãÇ…ìûíÖÇµÇΩÇ»ÇÁíTçıèIóπ
+			}
 		}
 	}
 

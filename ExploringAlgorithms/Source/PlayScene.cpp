@@ -17,7 +17,7 @@ PlayScene::PlayScene()
 	MazeLoader loader{ *pMaze };
 	assert(loader.TryLoad("./MapData/MapData.txt"));
 
-	new AStar{ { 1.0f / 60.0f, 0.3f }, *pMaze };
+	new AStar{ { 1.0f / 60.0f, 0.1f }, *pMaze };
 }
 
 PlayScene::~PlayScene()

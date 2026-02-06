@@ -149,6 +149,9 @@
     <ClInclude Include="Source\RouteViewer.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\GoalPanel.h">
+      <Filter>Cppのファイルたち</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -233,6 +236,9 @@
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
     <ClCompile Include="Source\RouteViewer.cpp">
+      <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GoalPanel.cpp">
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>

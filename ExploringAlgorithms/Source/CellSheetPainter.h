@@ -1,10 +1,19 @@
 #pragma once
+#include <functional>
 #include "../Library/GameObject.h"
 #include "CellSheet.h"
 
 
 class PainterColorMap;
 class PainterNumberConfig;
+
+constexpr auto DEFAULT_ON_DRAW
+{
+	[](Vec2Int begin, Vec2Int end, uint32_t color)
+	{
+		DrawBox(begin.x, begin.y, end.x, end.y, color, TRUE);
+	}
+};
 
 /// <summary>
 /// セルシートの内容を描画する
@@ -36,7 +45,11 @@ public:
 	/// </summary>
 	/// <param name="_cellSheet">シート</param>
 	/// <param name="_painterColorMap"></param>
-	void Paint(const CellSheet& _cellSheet, const PainterColorMap& _painterColorMap);
+	/// <param name="_onDraw">void(開始点, 終了点, 色)</param>
+	void Paint(
+		const CellSheet& _cellSheet,
+		const PainterColorMap& _painterColorMap,
+		const std::function<void(Vec2Int, Vec2Int, uint32_t)> _onDraw = DEFAULT_ON_DRAW);
 	/// <summary>
 	/// セルシートの値を描画する
 	/// </summary>

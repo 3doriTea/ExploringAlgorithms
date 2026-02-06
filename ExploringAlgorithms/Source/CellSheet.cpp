@@ -12,6 +12,12 @@ CellSheet::~CellSheet()
 {
 }
 
+bool CellSheet::IsOutSide(const Vec2Int _pos)
+{
+	int index{ _pos.x + _pos.y * size_.x };
+	return index < 0 || flattened_.size() <= index;
+}
+
 int& CellSheet::At(const Vec2Int _pos)
 {
 	int index{ _pos.x + _pos.y * size_.x };

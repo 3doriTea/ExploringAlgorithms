@@ -21,7 +21,10 @@ void CellSheetPainter::Draw()
 {
 }
 
-void CellSheetPainter::Paint(const CellSheet& _cellSheet, const PainterColorMap& _painterColorMap)
+void CellSheetPainter::Paint(
+	const CellSheet& _cellSheet,
+	const PainterColorMap& _painterColorMap,
+	const std::function<void(Vec2Int, Vec2Int, uint32_t)> _onDraw)
 {
 	Vec2Int size{ _cellSheet.GetSize() };
 	auto& valueToColor{ _painterColorMap.cellValueToColor_ };
@@ -41,7 +44,7 @@ void CellSheetPainter::Paint(const CellSheet& _cellSheet, const PainterColorMap&
 			Vec2Int begin{ config_.cellWidth * x, config_.cellWidth * y };
 			Vec2Int end{ config_.cellWidth * (x + 1), config_.cellWidth * (y + 1) };
 
-			DrawBox(begin.x, begin.y, end.x, end.y, color, TRUE);
+			_onDraw(begin, end, color);
 		}
 	}
 }

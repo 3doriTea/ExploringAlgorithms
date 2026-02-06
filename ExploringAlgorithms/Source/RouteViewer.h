@@ -24,5 +24,5 @@ public:
 
 private:
 	const CellSheet* pCellSheet_;
-
+	CellSheet route_;
 };

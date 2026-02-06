@@ -41,3 +41,8 @@ inline Vec2Int operator+(Vec2Int _left, Vec2Int _right)
 {
 	return Vec2Int{ _left } += _right;
 }
+
+inline bool operator==(Vec2Int _left, Vec2Int _right)
+{
+	return _left.x == _right.x && _left.y == _right.y;
+}

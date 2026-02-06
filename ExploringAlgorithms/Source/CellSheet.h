@@ -12,6 +12,13 @@ public:
 	~CellSheet();
 
 	/// <summary>
+	/// シートの範囲外か取得する
+	/// </summary>
+	/// <param name="_pos">セルの座標</param>
+	/// <returns>範囲外である true / false</returns>
+	bool IsOutSide(const Vec2Int _pos);
+
+	/// <summary>
 	/// セルの値を参照する
 	/// </summary>
 	/// <param name="_pos">セルの座標</param>
