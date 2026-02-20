@@ -1,6 +1,7 @@
 #pragma once
 #include "../Library/GameObject.h"
 #include "CellSheet.h"
+#include "Dir.h"
 
 
 class IMazeViewer;

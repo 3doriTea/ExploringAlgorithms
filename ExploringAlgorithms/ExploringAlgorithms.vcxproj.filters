@@ -158,6 +158,12 @@
     <ClInclude Include="Source\CostAndPos.h">
       <Filter>Cppのファイルたち\Algorithm</Filter>
     </ClInclude>
+    <ClInclude Include="Source\DFS.h">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dir.h">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -248,6 +254,9 @@
       <Filter>Cppのファイルたち</Filter>
     </ClCompile>
     <ClCompile Include="Source\Dijkstra.cpp">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DFS.cpp">
       <Filter>Cppのファイルたち\Algorithm</Filter>
     </ClCompile>
   </ItemGroup>

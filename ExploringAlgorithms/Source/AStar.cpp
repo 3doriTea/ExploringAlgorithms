@@ -20,23 +20,6 @@ bool AStar::Step()
 		return true;
 	}
 
-	enum DIR_TYPE
-	{
-		DIR_UP,
-		DIR_DOWN,
-		DIR_RIGHT,
-		DIR_LEFT,
-		DIR_MAX,
-	};
-
-	static const Vec2Int DIR_VEC[DIR_MAX]
-	{
-		{ 0, -1 },
-		{ 0, 1 },
-		{ 1, 0 },
-		{ -1, 0 },
-	};
-
 	if (queue_.empty())
 	{
 		return true;  // スタックが空なら探索完了

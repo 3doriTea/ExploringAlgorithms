@@ -11,6 +11,11 @@ RoadCost::~RoadCost()
 {
 }
 
+bool RoadCost::HasCost(const Vec2Int _pos)
+{
+	return cells_.At(_pos) != UNKNOWN_COST;
+}
+
 int RoadCost::GetCost(const Vec2Int _pos)
 {
 	assert(cells_.At(_pos) != UNKNOWN_COST
