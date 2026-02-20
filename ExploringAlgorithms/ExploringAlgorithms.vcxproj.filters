@@ -152,6 +152,12 @@
     <ClInclude Include="Source\GoalPanel.h">
       <Filter>Cppのファイルたち</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Dijkstra.h">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CostAndPos.h">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -240,6 +246,9 @@
     </ClCompile>
     <ClCompile Include="Source\GoalPanel.cpp">
       <Filter>Cppのファイルたち</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dijkstra.cpp">
+      <Filter>Cppのファイルたち\Algorithm</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

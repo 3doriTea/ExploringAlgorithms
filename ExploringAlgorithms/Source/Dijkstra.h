@@ -6,11 +6,11 @@
 #include "CostAndPos.h"
 
 
-class AStar : public AlgorithmPlayer
+class Dijkstra : public AlgorithmPlayer
 {
 public:
 	using AlgorithmPlayer::AlgorithmPlayer;
-	inline ~AStar() {}
+	inline ~Dijkstra() {}
 
 	void Init() override;
 	bool Step() override;
@@ -21,7 +21,6 @@ private:
 	CostAndPos ToCostAndPos(const Vec2Int _pos);
 
 	float G(const Vec2Int _pos);
-	float H(const Vec2Int _pos);
 
 	/// <summary>
 	/// ŠÈˆÕ“I‚È—\‘z‹——£‚ðŽæ“¾‚·‚é

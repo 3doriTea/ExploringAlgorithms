@@ -5,6 +5,7 @@
 #include <cassert>
 
 #include "AStar.h"
+#include "Dijkstra.h"
 #include "BFS.h"
 
 
@@ -17,7 +18,7 @@ PlayScene::PlayScene()
 	MazeLoader loader{ *pMaze };
 	assert(loader.TryLoad("./MapData/MapData.txt"));
 
-	new AStar{ { 1.0f / 60.0f, 0.1f }, *pMaze };
+	new Dijkstra{ { 1.0f / 60.0f, 0.1f }, *pMaze };
 }
 
 PlayScene::~PlayScene()
