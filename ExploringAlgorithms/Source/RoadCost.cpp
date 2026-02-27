@@ -1,5 +1,6 @@
 #include "RoadCost.h"
 #include <cassert>
+#include "Dir.h"
 
 
 RoadCost::RoadCost() :
@@ -26,23 +27,6 @@ int RoadCost::GetCost(const Vec2Int _pos)
 
 void RoadCost::SetCostUnitCell(const int _cost, const Vec2Int _pos)
 {
-	enum DIR_TYPE
-	{
-		DIR_UP,
-		DIR_DOWN,
-		DIR_RIGHT,
-		DIR_LEFT,
-		DIR_MAX,
-	};
-
-	static const Vec2Int DIR_VEC[DIR_MAX]
-	{
-		{ 0, -1 },
-		{ 0, 1 },
-		{ 1, 0 },
-		{ -1, 0 },
-	};
-
 	int minCost{ UNKNOWN_COST };
 	for (int d = 0; d < DIR_MAX; d++)
 	{

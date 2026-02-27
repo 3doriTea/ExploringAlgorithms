@@ -143,6 +143,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Pin.h" />
+    <ClInclude Include="Source\AI.h" />
+    <ClInclude Include="Source\DemoScene.h" />
     <ClInclude Include="Source\DFS.h" />
     <ClInclude Include="Source\CostAndPos.h" />
     <ClInclude Include="Source\Dijkstra.h" />
@@ -158,6 +161,7 @@
     <ClInclude Include="ImGui\imstb_truetype.h" />
     <ClInclude Include="Source\Dir.h" />
     <ClInclude Include="Source\GoalPanel.h" />
+    <ClInclude Include="Source\GroundMap.h" />
     <ClInclude Include="Source\RouteViewer.h" />
     <ClInclude Include="Source\PainterNumberConfig.h" />
     <ClInclude Include="Source\AlgorithmPlayer.h" />
@@ -203,9 +207,13 @@
     <ClCompile Include="Library\ObjectManager.cpp" />
     <ClCompile Include="Library\SceneManager.cpp" />
     <ClCompile Include="Library\Time.cpp" />
+    <ClCompile Include="Source\Pin.cpp" />
+    <ClCompile Include="Source\AI.cpp" />
+    <ClCompile Include="Source\DemoScene.cpp" />
     <ClCompile Include="Source\DFS.cpp" />
     <ClCompile Include="Source\Dijkstra.cpp" />
     <ClCompile Include="Source\GoalPanel.cpp" />
+    <ClCompile Include="Source\GroundMap.cpp" />
     <ClCompile Include="Source\PainterNumberConfig.cpp" />
     <ClCompile Include="Source\AlgorithmPlayer.cpp" />
     <ClCompile Include="Source\AStar.cpp" />

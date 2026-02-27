@@ -27,6 +27,9 @@
     <Filter Include="Cppのファイルたち\Algorithm">
       <UniqueIdentifier>{4fbc8c33-135d-469e-b991-8ec06d3ec3b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cppのファイルたち\DemoGame">
+      <UniqueIdentifier>{146a6508-08bc-4fc7-81cf-960095ac46b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImGui\imconfig.h">
@@ -164,6 +167,18 @@
     <ClInclude Include="Source\Dir.h">
       <Filter>Cppのファイルたち\Algorithm</Filter>
     </ClInclude>
+    <ClInclude Include="Source\DemoScene.h">
+      <Filter>Cppのファイルたち\DemoGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GroundMap.h">
+      <Filter>Cppのファイルたち\DemoGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AI.h">
+      <Filter>Cppのファイルたち\DemoGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pin.h">
+      <Filter>Cppのファイルたち\DemoGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -258,6 +273,18 @@
     </ClCompile>
     <ClCompile Include="Source\DFS.cpp">
       <Filter>Cppのファイルたち\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoScene.cpp">
+      <Filter>Cppのファイルたち\DemoGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GroundMap.cpp">
+      <Filter>Cppのファイルたち\DemoGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AI.cpp">
+      <Filter>Cppのファイルたち\DemoGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pin.cpp">
+      <Filter>Cppのファイルたち</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
