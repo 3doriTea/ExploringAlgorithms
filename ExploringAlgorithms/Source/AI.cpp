@@ -55,17 +55,18 @@ void AI::Update()
 	if (pMap)
 	{
 		Vec2Int tileWith{ pMap->GetTileWidth() };
-
 		Vec2Int tilePos{ pMap->GetTilePosition(pos_) };
 		
 		// 自分のいるタイルが壁なら、半分行っているか行っていないかで押し出す処理
 
+
+
+		/*
 		if (pMap->IsWall(tilePos + DIR_VEC[DIR_UP])
 			&& pMap->)
 		{
-
 		}
-
+		*/
 		/*if (pMap->IsWall(tilePos))
 		{
 			if (tilePos.x < tileWith.x / 2)
@@ -85,7 +86,6 @@ void AI::Update()
 				pos_.y = (pos_.y / tileWith.y) * tileWith.y + 1;
 			}
 		}*/
-
 		/*if (((pos_.y % tileWith.y) < tileWith.y / 2 &&
 			pMap->IsWall(tilePos + DIR_VEC[DIR_UP])) ||
 			((pos_.y % tileWith.y) > tileWith.y / 2 &&
